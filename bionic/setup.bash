@@ -1,29 +1,33 @@
 #!/bin/bash
 # Install basic packages #
-sudo apt install -yq wget
-sudo apt install -yq curl
-sudo apt install -yq unzip
-sudo apt install -yq git
-sudo apt install -yq git-lfs
-sudo apt install -yq build-essential
-sudo apt install -yq emacs
-sudo apt install -yq vim
-sudo apt install -yq vlc
-sudo apt install -yq gimp
-sudo apt install -yq inkscape
-sudo apt install -yq terminator
-sudo apt install -yq net-tools
-sudo apt install -yq arp-scan
-sudo apt install -yq gcc
-sudo apt install -yq g++
-sudo apt install -yq cmake
-sudo apt install -yq python-pip
-sudo apt install -yq python3-pip
-sudo apt install -yq lsb-release
-sudo apt install -yq locales
-sudo apt install -yq locate
-sudo apt install -yq bash-completion
-sudo apt install -yq tzdata
+sudo apt-get update
+sudo apt-get -yq upgrade
+sudo apt-get install -yq wget
+sudo apt-get install -yq curl
+sudo apt-get install -yq unzip
+sudo apt-get install -yq git
+sudo apt-get install -yq git-lfs
+sudo apt-get install -yq build-essential
+sudo apt-get install -yq emacs
+sudo apt-get install -yq vim
+sudo apt-get install -yq vlc
+sudo apt-get install -yq gimp
+sudo apt-get install -yq inkscape
+sudo apt-get install -yq terminator
+sudo apt-get install -yq net-tools
+sudo apt-get install -yq arp-scan
+sudo apt-get install -yq gcc
+sudo apt-get install -yq g++
+sudo apt-get install -yq cmake
+sudo apt-get install -yq python-pip
+sudo apt-get install -yq python3-pip
+sudo apt-get install -yq lsb-release
+sudo apt-get install -yq locales
+sudo apt-get install -yq locate
+sudo apt-get install -yq bash-completion
+sudo apt-get install -yq tzdata
+sudo apt-get -yq clean
+sudo sudo rm -rf /var/lib/apt/lists/*
 
 # Download font #
 mkdir /home/ubuntu/.fonts
