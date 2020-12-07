@@ -14,4 +14,5 @@ RUN mkdir /home/ubuntu/.fonts
 COPY ./.HackGen_v1.2.1.zip /home/ubuntu/.fonts/.HackGen_v1.2.1.zip
 RUN cd /home/ubuntu/.fonts/ && unzip /home/ubuntu/.fonts/.HackGen_v1.2.1.zip
 RUN cd /home/ubuntu/ && git clone https://github.com/RyodoTanaka/.emacs.d.git
+RUN cd /home/ubuntu/ && git clone https://github.com/RyodoTanaka/.bash_extend.git && echo "source /home/ubuntu/.bash_extend/ud.bash" >> /home/ubuntu/.bashrc
 ENV USER ubuntu
