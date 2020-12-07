@@ -13,5 +13,5 @@ RUN useradd --create-home --home-dir /home/ubuntu --shell /bin/bash --user-group
 
 RUN mkdir -p tmp/setup
 COPY ./setup.bash /tmp/setup.bash
-RUN sudo -U ubuntu source /tmp/setup.bash
+RUN sudo -u ubuntu /tmp/setup.bash
 ENV USER ubuntu
