@@ -3,6 +3,8 @@ My basic ubuntu environment.
 
 - [bionic](./bionic) : Ubuntu 18.04 LTS (bionic) basic environment.
 - [focal](./focal) : Ubuntu 20.04 LTS (focal) basic environment.
+- [bionic-melodic](./bionic/melodic) : `bionic` + `ros-melodic-desktop-full` environment.
+- [focal-noetic](./focal/noetic) : `focal` + `ros-noetic-desktop-full` environment.
 
 # Build
 ### Download via DockerHub
