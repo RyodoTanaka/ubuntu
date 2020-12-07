@@ -19,17 +19,16 @@ In this image, mainly, following software are already installed.
 - gcc
 - g++
 - cmake
-- python-pip
 - python3-pip
 
 # Build
 ### Download via DockerHub
 ```bash
-$ docker pull ryodo/ubuntu:bionic
+$ docker pull ryodo/ubuntu:focal
 ```
 ### Build by DockerFile
 ```bash
-$ docker build -t ryodo/ubuntu:bionic .
+$ docker build -t ryodo/ubuntu:focal .
 ```
 
 # Launch
@@ -39,7 +38,7 @@ If the command is rejected by permission, add `sudo` command on the top.
 The following command uses `~/docker` directory as the share directory with the host.  
 So, please make that directory before running.
 ```bash
-docker run -p 6080:80 -p 5900:5900 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm -v /media:/media -v ~/docker:/home/ubuntu/docker ryodo/ubuntu:bionic
+docker run -p 6080:80 -p 5900:5900 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm -v /media:/media -v ~/docker:/home/ubuntu/docker ryodo/ubuntu:focal
 ```
 ### 2. Launch GUI client
 There are two ways to launch GUI client.
