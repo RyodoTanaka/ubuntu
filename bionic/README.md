@@ -8,8 +8,8 @@ In this image, mainly, following software are already installed.
 - git
 - git-lfs
 - build-essential
-- vim
 - emacs
+- vim
 - vlc
 - gimp
 - inkscape
@@ -21,6 +21,11 @@ In this image, mainly, following software are already installed.
 - cmake
 - python-pip
 - python3-pip
+- lsb-release
+- locales
+- locate
+- bash-completion
+- tzdata
 
 # Build
 ### Download via DockerHub
