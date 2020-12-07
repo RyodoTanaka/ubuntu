@@ -1,34 +1,17 @@
 # About
 My basic ubuntu environment.  
-In this image, mainly, following software are already installed.
-### Tools
-- wget
-- curl
-- unzip
-- git
-- git-lfs
-- build-essential
-- vim
-- emacs
-- vlc
-- gimp
-- inkscape
-- terminator
-- net-tools
-- arp-scan
-- gcc
-- g++
-- cmake
-- python3-pip
+
+- [bionic](./bionic) : Ubuntu 18.04 LTS (bionic) basic environment.
+- [focal](./focal) : Ubuntu 20.04 LTS (focal) basic environment.
 
 # Build
 ### Download via DockerHub
 ```bash
-$ docker pull ryodo/ubuntu:focal
+$ docker pull ryodo/ubuntu:<tags>
 ```
 ### Build by DockerFile
 ```bash
-$ docker build -t ryodo/ubuntu:focal .
+$ docker build -t ryodo/ubuntu:<tags> .
 ```
 
 # Launch
@@ -38,7 +21,7 @@ If the command is rejected by permission, add `sudo` command on the top.
 The following command uses `~/docker` directory as the share directory with the host.  
 So, please make that directory before running.
 ```bash
-docker run -p 6080:80 -p 5900:5900 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm -v /media:/media -v ~/docker:/home/ubuntu/docker ryodo/ubuntu:focal
+docker run -p 6080:80 -p 5900:5900 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm -v /media:/media -v ~/docker:/home/ubuntu/docker ryodo/ubuntu:<tags>
 ```
 ### 2. Launch GUI client
 There are two ways to launch GUI client.
