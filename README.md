@@ -1,11 +1,14 @@
 # About
 My basic ubuntu environment.  
 
+### Ubuntu 18.04 LTS (bionic) base
 - [bionic](https://github.com/RyodoTanaka/ubuntu/tree/master/bionic) : Ubuntu 18.04 LTS (bionic) basic environment.
-- [focal](https://github.com/RyodoTanaka/ubuntu/tree/master/focal) : Ubuntu 20.04 LTS (focal) basic environment.
 - [bionic-melodic](https://github.com/RyodoTanaka/ubuntu/tree/master/bionic/melodic) : `bionic` + `ros-melodic-desktop-full` environment.
-- [focal-noetic](https://github.com/RyodoTanaka/ubuntu/tree/master/focal/noetic) : `focal` + `ros-noetic-desktop-full` environment.
 - [bionic-eloquent](https://github.com/RyodoTanaka/ubuntu/tree/master/bionic/eloquent) : `bionic` + `ros-eloquent-desktop` environment.
+
+### Ubuntu 20.04 LTS (focal) base
+- [focal](https://github.com/RyodoTanaka/ubuntu/tree/master/focal) : Ubuntu 20.04 LTS (focal) basic environment.
+- [focal-noetic](https://github.com/RyodoTanaka/ubuntu/tree/master/focal/noetic) : `focal` + `ros-noetic-desktop-full` environment.
 - [focal-foxy](https://github.com/RyodoTanaka/ubuntu/tree/master/focal/foxy) : `foclal` + `ros-foxy-desktop` environment.
 
 # Build
